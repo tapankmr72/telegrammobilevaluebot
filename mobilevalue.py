@@ -11,7 +11,7 @@ polltime=5
 looper=0
 message = ""
 updatetext1=0
-path = "C:\\Users\\tapan\\OneDrive\\Desktop\\numbervaluebot\\"
+path = ""
 
 token="5666235482:AAFQX9JfeXrtRBHh_plmfoV6e1cvXZbQ0P4"
 headers = {"accept": "application/json","content-type": "application/json"}
