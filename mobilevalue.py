@@ -42,6 +42,7 @@ while looper==0:
      r = 2
      col = 0
      updatefile = open(path + "updateid.txt", 'r+')
+     updatefile.flush()
      updatetext = updatefile.read()
      updatefile.close()
      time.sleep(polltime)
@@ -110,6 +111,7 @@ while looper==0:
                 messagetext = messagetext.strip()
                 print("----------------")
                 userfile = open(path + "numbervalueuser.txt", 'r')
+                userfile.flush()
                 usertext = userfile.read()
                 userfile.close
                 find1 = usertext.find(numbertext)
