@@ -113,7 +113,7 @@ while looper==0:
                 userfile = open(path + "numbervalueuser.txt", 'r')
                 userfile.flush()
                 usertext = userfile.read()
-                userfile.close
+                #userfile.close
                 find1 = usertext.find(numbertext)
                 if find1 == -1:
                     userfile = open(path + "numbervalueuser.txt", 'a')
