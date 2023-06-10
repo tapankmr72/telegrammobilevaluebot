@@ -6346,6 +6346,8 @@ while looper==0:
                               "disable_notification": False, "reply_to_message_id": None, "chat_id": numbertext}
                     response = requests.post(texturl, json=payloadtext, headers=headers)
                     print(response.text)
+                    message = ""
+                    savemessage = ""
                     #payloadimg = {"photo": bounceimage, "caption": "", "disable_notification": False,"reply_to_message_id": None, "chat_id": numbertext }
                     #response = requests.post(photourl, json=payloadimg, headers=headers)
 
