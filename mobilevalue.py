@@ -12,7 +12,7 @@ looper=0
 message = ""
 updatetext1=0
 path = ""
-
+st.header('Check value of Your Mobile number...')
 token="5666235482:AAFQX9JfeXrtRBHh_plmfoV6e1cvXZbQ0P4"
 headers = {"accept": "application/json","content-type": "application/json"}
 photourl="https://api.telegram.org/bot"+token+"/sendPhoto"
@@ -6346,7 +6346,7 @@ while looper==0:
                               "disable_notification": False, "reply_to_message_id": None, "chat_id": numbertext}
                     response = requests.post(texturl, json=payloadtext, headers=headers)
                     print(response.text)
-                    payloadimg = {"photo": bounceimage, "caption": "", "disable_notification": False,"reply_to_message_id": None, "chat_id": numbertext }
+                    #payloadimg = {"photo": bounceimage, "caption": "", "disable_notification": False,"reply_to_message_id": None, "chat_id": numbertext }
                     #response = requests.post(photourl, json=payloadimg, headers=headers)
 
                     #print(response.text)
