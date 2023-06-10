@@ -7,8 +7,9 @@ from datetime import datetime,timedelta
 import json
 import urllib.request
 import requests
-polltime=5
-looper=0
+polltime=2
+pollgap=2
+#looper=0
 message = ""
 updatetext1=0
 path = ""
@@ -42,13 +43,13 @@ while looper==0:
      r = 2
      col = 0
      updatefile = open(path + "updateid.txt", 'r+')
-     updatefile.flush()
+     #updatefile.flush()
      updatetext = updatefile.read()
      updatefile.close()
      time.sleep(polltime)
      # Starting Long Polling
      lastupdate = int(updatetext)
-     payloadpoll = {"offset": lastupdate, "limit": 10, "timeout": 30}
+     payloadpoll = {"offset": lastupdate, "limit": 20, "timeout": pollgap}
      response = requests.post(pollurl, json=payloadpoll, headers=headers)
      f = urllib.request.urlopen(pollurl)
      data = json.load(f)
