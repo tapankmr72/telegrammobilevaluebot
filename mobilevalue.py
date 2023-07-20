@@ -14,7 +14,7 @@ message = ""
 updatetext1=0
 path = ""
 st.header('Check value of Your Mobile number...')
-token="5666235482:AAFQX9JfeXrtRBHh_plmfoV6e1cvXZbQ0P4"
+#token="5666235482:AAFQX9JfeXrtRBHh_plmfoV6e1cvXZbQ0P4"
 headers = {"accept": "application/json","content-type": "application/json"}
 photourl="https://api.telegram.org/bot"+token+"/sendPhoto"
 texturl="https://api.telegram.org/bot"+token+"/sendMessage"
